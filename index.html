@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Darshan M Allurkar - Portfolio </title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-glow" id="cursor-glow"></div>
+
+  <!
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+      <img src="logo.jpg" alt="Logo" class="nav-logo-img" />
+      <span class="nav-logo-name">Darshan M Allurkar</span>
+</div>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">✨ Welcome to My Tech Space ✨</div>
+    <h1 class="headline"><span id="typed"></span></h1>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@600;800&display=swap">
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    new Typed("#typed", {
+      strings: ["Aspiring Backend Developer", "Data Science Enthusiast", "Tech Explorer"],
+      typeSpeed: 70,
+      backSpeed: 40,
+      backDelay: 1200,
+      smartBackspace: true,
+      loop: true,
+      showCursor: true,
+      cursorChar: "|"
+    });
+  });
+</script>
+
+<style>
+  .headline{
+    font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    font-size: clamp(28px, 6vw, 56px);
+    font-weight: 800;
+    text-align: center;
+    margin: 0.5rem 0 0;
+  }
+
+  #typed{
+    background: linear-gradient(135deg, #cb1171, #f502fd, #ff0000, #00ffe5, #0073ff);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+            background-clip: text;
+    color: transparent;
+    animation: hueShift 8s ease-in-out infinite;
+    letter-spacing: 0.5px;
+  }
+
+  .typed-cursor{
+    font-weight: 600;
+    color: #00e6e6;
+    animation: blink 1s steps(1) infinite;
+  }
+
+  @keyframes hueShift{
+    0%{ background-position: 0% 50%; }
+    50%{ background-position: 100% 50%; }
+    100%{ background-position: 0% 50%; }
+  }
+
+  @keyframes blink{
+    0%,100%{ opacity: 1; }
+    50%{ opacity: 0; }
+  }
+</style>
+      <p>I craft beautiful, interactive web experiences with modern<br />technologies</p>
+      <p>Passionate about clean code, elegant designs, and seamless user<br />experiences.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn-primary">
+          <i class="fas fa-rocket"></i> Explore My Universe
+        </a>
+        <a href="Darshan-M-A-CV.pdf" 
+        download="Darshan-M-A-CV.pdf" 
+        type="application/pdf" 
+        class="btn-primary">
+        <i class="fas fa-file-download"></i> Download CV
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about-section section">
+    <div class="section-container">
+     <h2 class="section-title" style="color: red;">About Me</h2>
+      <p class="section-subtitle">Get to know the person behind the code</p>
+      <div class="about-content">
+        <div class="about-image">
+          <div class="">
+            <div class="profile-wrapper">
+              <img src="profile pic.jpg" alt="Profile" class="profile-img-animated">
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <h3 style="font-size:2.5rem; font-weight:400; color:#e5e5e5;">
+  Hello, <span style="font-weight:700; color:#ef0808;">I'm Darshan M Allurkar</span></h3>
+          <p>I’m a final-year B.Tech Computer Science and Engineering student at Sharnbasva University. I have experience in Python, Java, C, HTML, CSS, and basic DevOps, and I’m currently learning Go (Golang) to strengthen my backend development skills.</p>
+          <p>I have worked on multiple academic and personal projects, completed an internship, and participated in a college hackathon, which helped me gain hands-on problem-solving and teamwork experience. My areas of interest include backend development, data science, web development, and emerging technologies like AI, blockchain, embedded systems, and IoT.</p>
+          <p>I aim to start my career as a backend developer or data scientist/analyst, where I can apply my technical skills to deliver practical solutions while continuing to learn and grow. Outside academics, I enjoy bike riding, fitness, gaming, basketball, and music, which keep me motivated and energetic.</p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <div class="stat-number">6</div>
+              <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">1</div>
+              <div class="stat-label">Hackathons completed</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">1</div>
+              <div class="stat-label">Interships completed</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="experience-section section">
+    <div class="section-container">
+      <h2 class="section-title">Experience & Education</h2>
+      <p class="section-subtitle">My journey in the world of technology</p>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">2022 - 2026</div>
+            <div class="timeline-title">Degree completion</div>
+            <div class="timeline-company">Sharnbasva University</div>
+            <div class="timeline-description">I completed my B.Tech degree in Computer Science and Engineering from Sharnbasva University Kalaburagi, Karnataka.</div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">-----</div>
+            <div class="timeline-title">-----</div>
+            <div class="timeline-company">----</div>
+            <div class="timeline-description">----</div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">----</div>
+            <div class="timeline-title">----</div>
+            <div class="timeline-company">----</div>
+            <div class="timeline-description">----</div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">----</div>
+            <div class="timeline-title">-----</div>
+            <div class="timeline-company">----</div>
+            <div class="timeline-description">----</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section section">
+    <div class="section-container">
+      <h2 class="section-title">Skills & Technologies</h2>
+      <p class="section-subtitle">The magical tools I use to bring ideas to life</p>
+      <div class="skills-grid">
+        <div class="skill-card"><div class="skill-icon"><i class="fab fa-html5"></i></div><div class="skill-name">HTML</div></div>
+        <div class="skill-card"><div class="skill-icon"><i class="fab fa-css3-alt"></i></div><div class="skill-name">CSS</div></div>
+        <div class="skill-card"><div class="skill-icon"><i class="fab fa-js-square"></i></div><div class="skill-name">JavaScript</div></div>
+        <div class="skill-card"><div class="skill-icon"><i class="fab fa-react"></i></div><div class="skill-name">React</div></div>
+        <div class="skill-card"><div class="skill-icon"><i class="fab fa-node-js"></i></div><div class="skill-name">Node.js</div></div>
+        <div class="skill-card"><div class="skill-icon"><i class="fab fa-python"></i></div><div class="skill-name">Python</div></div>
+        <div class="skill-card"><div class="skill-icon"><i class="fas fa-database"></i></div><div class="skill-name">Database</div></div>
+        <div class="skill-card"><div class="skill-icon"><i class="fab fa-git-alt"></i></div><div class="skill-name">Git</div></div>
+        <div class="skill-card"><div class="skill-icon"><i class="fab fa-figma"></i></div><div class="skill-name">Figma</div></div>
+        <div class="skill-card"><div class="skill-icon"><i class="fas fa-code"></i></div><div class="skill-name">Golang</div></div>
+        <div class="skill-card"><div class="skill-icon"><i class="fas fa-cloud"></i></div><div class="skill-name">Cloud</div></div>
+        <div class="skill-card"><div class="skill-icon"><i class="fas fa-cog"></i></div><div class="skill-name">DevOps</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section 1-->
+  <section id="projects" class="projects-section section">
+    <div class="section-container">
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-subtitle">A showcase of my creative work and technical expertise</p>
+      <div class="projects-grid">
+        
+        <div class="project-card">
+          <div class="project-image">
+            <img src="entertainmenthub.png" alt="Entertainment Hub Screenshot">
+          </div>
+          <div class="project-content">
+            <h3>Entertainment Hub</h3>
+            <p>Cine Book is an interactive hub for movies and concerts—browse, book, and enjoy your favorite shows with a seamless seat selection and ticketing experience
+            </p>
+            <div class="project-tags">
+              <span>JavaScript</span>
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Darshan-M-A/EntertainmentHub" target="_blank" class="btn">
+                <i class="fab fa-github"></i> View Code
+              </a>
+              <a href="https://entertainmenthub-three.vercel.app/" target="_blank" class="btn">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>       
+      <!--2-->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="NoteVault.png" alt="Note Vault Screenshot">
+          </div>
+          <div class="project-content">
+            <h3>Note Vault</h3>
+            <p>Note Vault is a secure note-taking app with OTP and Google sign-in. Once logged in, users can seamlessly create, save, and remove notes—stored safely in local storage.
+            </p>
+            <div class="project-tags">
+              <span>JavaScript</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Local Storage</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Darshan-M-A/Notevault" target="_blank" class="btn">
+                <i class="fab fa-github"></i> View Code
+              </a>
+              <a href="https://notevault-six.vercel.app/" target="_blank" class="btn">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+      <!--3-->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://via.placeholder.com/300x160" alt="Note Vault Screenshot">
+          </div>
+          <div class="project-content">
+            <h3>Note Vault</h3>
+            <p>A modern note-taking app with OTP login, Google OAuth & real-time note management.
+            </p>
+            <div class="project-tags">
+              <span>JavaScript</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Local Storage</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Darshan-M-A/notevault" target="_blank" class="btn">
+                <i class="fab fa-github"></i> View Code
+              </a>
+              <a href="https://notevault-git-main-darshan-m-as-projects.vercel.app" target="_blank" class="btn">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+<!--4-->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://via.placeholder.com/300x160" alt="Note Vault Screenshot">
+          </div>
+          <div class="project-content">
+            <h3>Note Vault</h3>
+            <p>A modern note-taking app with OTP login, Google OAuth & real-time note management.
+            </p>
+            <div class="project-tags">
+              <span>JavaScript</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Local Storage</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Darshan-M-A/notevault" target="_blank" class="btn">
+                <i class="fab fa-github"></i> View Code
+              </a>
+              <a href="https://notevault-git-main-darshan-m-as-projects.vercel.app" target="_blank" class="btn">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+<!--5-->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://via.placeholder.com/300x160" alt="Note Vault Screenshot">
+          </div>
+          <div class="project-content">
+            <h3>Note Vault</h3>
+            <p>A modern note-taking app with OTP login, Google OAuth & real-time note management.
+            </p>
+            <div class="project-tags">
+              <span>JavaScript</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Local Storage</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Darshan-M-A/notevault" target="_blank" class="btn">
+                <i class="fab fa-github"></i> View Code
+              </a>
+              <a href="https://notevault-git-main-darshan-m-as-projects.vercel.app" target="_blank" class="btn">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+<!--6-->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://via.placeholder.com/300x160" alt="Note Vault Screenshot">
+          </div>
+          <div class="project-content">
+            <h3>Note Vault</h3>
+            <p>A modern note-taking app with OTP login, Google OAuth & real-time note management.
+            </p>
+            <div class="project-tags">
+              <span>JavaScript</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Local Storage</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Darshan-M-A/notevault" target="_blank" class="btn">
+                <i class="fab fa-github"></i> View Code
+              </a>
+              <a href="https://notevault-git-main-darshan-m-as-projects.vercel.app" target="_blank" class="btn">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section section">
+    <div class="section-container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-subtitle">Let's work together and create something amazing</p>
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>Let's Connect</h3>
+          <p>I'm always excited to work on new projects and collaborate with amazing people. Whether you have a project, want to discuss opportunities or say hello, I'd love to hear from you!</p>
+          <div class="contact-details">
+            <div class="contact-item"><div class="contact-icon"><i class="fas fa-envelope"></i></div><div class="contact-text">darshanallurkar615@gmail.com</div></div>
+            <div class="contact-item"><div class="contact-icon"><i class="fas fa-phone"></i></div><div class="contact-text">9353157384</div></div>
+            <div class="contact-item"><div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div><div class="contact-text">Karnataka, India</div></div>
+          </div>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/darshan-m-allurkar-a8193a27a/" class="social-link" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/Darshan-M-A" class="social-link" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/darshan_m_714" class="social-link" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <!--for future link adding-->
+            <!--<a href="https://dribbble.com/your-username" class="social-link" target="_blank">
+              <i class="fab fa-dribbble"></i>
+            </a>--> 
+          </div>
+        </div>
+        <div class="contact-form">
+          <form>
+            <div class="form-group"><input type="text" id="name" required placeholder=" " /><label for="name">Your Name</label></div>
+            <div class="form-group"><input type="email" id="email" required placeholder=" " /><label for="email">Your Email</label></div>
+            <div class="form-group"><input type="text" id="subject" required placeholder=" " /><label for="subject">Subject</label></div>
+            <div class="form-group"><textarea id="message" rows="5" required placeholder=" "></textarea><label for="message">Your Message</label></div>
+            <button type="submit" class="submit-btn"><i class="fas fa-paper-plane"></i> Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- External JS -->
+  <script src="app.js"></script>
+</body>
+</html>
