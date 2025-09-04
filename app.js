@@ -171,3 +171,38 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('[class*="animate"]').forEach(el => observer.observe(el));
 });
 
+// email functionality using EmailJS
+function sendEmail(event) {
+  event.preventDefault();
+
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const subjectTyped = document.getElementById("subject").value.trim();
+  const message = document.getElementById("message").value.trim();
+
+  const subject = subjectTyped || `Portfolio Feedback from ${name || "Visitor"}`;
+
+  // Format body with line breaks
+  const bodyText =
+    `Name: ${name}\r\n` +
+    `Email: ${email}\r\n\r\n` +
+    `Message:\r\n${message}`;
+
+  const to = "darshanallurkar615@gmail.com";
+  const mailto =
+    `mailto:${to}?subject=${encodeURIComponent(subject)}` +
+    `&body=${encodeURIComponent(bodyText)}` +
+    `&cc=${encodeURIComponent(email)}`;
+
+  // Show popup
+  const popup = document.getElementById("success-popup");
+  if (popup) {
+    popup.style.display = "block";
+    setTimeout(() => { popup.style.display = "none"; }, 2500);
+  }
+
+  // Open default mail app
+  setTimeout(() => {
+    window.location.href = mailto;
+  }, 700);
+}

@@ -21,20 +21,20 @@
 
   <!
   <nav class="navbar" id="navbar">
-    <div class="nav-container">
-      <div class="nav-logo">
+  <div class="nav-container">
+    <div class="nav-logo">
       <img src="logo.jpg" alt="Logo" class="nav-logo-img" />
       <span class="nav-logo-name">Darshan M Allurkar</span>
-</div>
+    </div>
 
-      <ul class="nav-menu" id="nav-menu">
-        <li><a href="#home" class="nav-link active">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#experience" class="nav-link">Experience</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
       <div class="hamburger" id="hamburger">
         <span></span>
         <span></span>
@@ -103,7 +103,6 @@
   }
 </style>
       <p>I craft beautiful, interactive web experiences with modern<br />technologies</p>
-      <p>Passionate about clean code, elegant designs, and seamless user<br />experiences.</p>
       <div class="hero-buttons">
         <a href="#projects" class="btn-primary">
           <i class="fas fa-rocket"></i> Explore My Universe
@@ -132,7 +131,7 @@
         </div>
         <div class="about-text">
           <h3 style="font-size:2.5rem; font-weight:400; color:#e5e5e5;">
-  Hello, <span style="font-weight:700; color:#ef0808;">I'm Darshan M Allurkar</span></h3>
+  Hello, <br><span style="font-weight:700; color:#ef0808;">I'm Darshan M Allurkar</span></h3>
           <p>I’m a final-year B.Tech Computer Science and Engineering student at Sharnbasva University. I have experience in Python, Java, C, HTML, CSS, and basic DevOps, and I’m currently learning Go (Golang) to strengthen my backend development skills.</p>
           <p>I have worked on multiple academic and personal projects, completed an internship, and participated in a college hackathon, which helped me gain hands-on problem-solving and teamwork experience. My areas of interest include backend development, data science, web development, and emerging technologies like AI, blockchain, embedded systems, and IoT.</p>
           <p>I aim to start my career as a backend developer or data scientist/analyst, where I can apply my technical skills to deliver practical solutions while continuing to learn and grow. Outside academics, I enjoy bike riding, fitness, gaming, basketball, and music, which keep me motivated and energetic.</p>
@@ -390,12 +389,48 @@
     </div>
   </section>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <style>
+    /* Popup styling */
+    #success-popup {
+      display: none;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: #28a745;
+      color: #fff;
+      padding: 12px 18px;
+      border-radius: 8px;
+      font-size: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      animation: fadeInOut 2.5s ease forwards;
+      z-index: 9999;
+    }
+    @keyframes fadeInOut {
+      0% { opacity: 0; transform: translateY(-10px); }
+      10% { opacity: 1; transform: translateY(0); }
+      90% { opacity: 1; }
+      100% { opacity: 0; transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body>
+
   <!-- Contact Section -->
   <section id="contact" class="contact-section section">
     <div class="section-container">
       <h2 class="section-title">Get In Touch</h2>
       <p class="section-subtitle">Let's work together and create something amazing</p>
       <div class="contact-content">
+        
+        <!-- Left Info -->
         <div class="contact-info">
           <h3>Let's Connect</h3>
           <p>I'm always excited to work on new projects and collaborate with amazing people. Whether you have a project, want to discuss opportunities or say hello, I'd love to hear from you!</p>
@@ -404,6 +439,8 @@
             <div class="contact-item"><div class="contact-icon"><i class="fas fa-phone"></i></div><div class="contact-text">9353157384</div></div>
             <div class="contact-item"><div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div><div class="contact-text">Karnataka, India</div></div>
           </div>
+
+          <!-- ✅ Your social links unchanged -->
           <div class="social-links">
             <a href="https://www.linkedin.com/in/darshan-m-allurkar-a8193a27a/" class="social-link" target="_blank">
               <i class="fab fa-linkedin"></i>
@@ -414,26 +451,67 @@
             <a href="https://www.instagram.com/darshan_m_714" class="social-link" target="_blank">
               <i class="fab fa-instagram"></i>
             </a>
-            <!--for future link adding-->
-            <!--<a href="https://dribbble.com/your-username" class="social-link" target="_blank">
-              <i class="fab fa-dribbble"></i>
-            </a>--> 
           </div>
         </div>
+
+        <!-- Right Form -->
         <div class="contact-form">
-          <form>
-            <div class="form-group"><input type="text" id="name" required placeholder=" " /><label for="name">Your Name</label></div>
-            <div class="form-group"><input type="email" id="email" required placeholder=" " /><label for="email">Your Email</label></div>
-            <div class="form-group"><input type="text" id="subject" required placeholder=" " /><label for="subject">Subject</label></div>
-            <div class="form-group"><textarea id="message" rows="5" required placeholder=" "></textarea><label for="message">Your Message</label></div>
-            <button type="submit" class="submit-btn"><i class="fas fa-paper-plane"></i> Send Message</button>
+          <form onsubmit="sendEmail(event)">
+            <div class="form-group">
+              <input type="text" id="name" required placeholder=" " />
+              <label for="name">Your Name</label>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" required placeholder=" " />
+              <label for="email">Your Email</label>
+            </div>
+            <div class="form-group">
+              <input type="text" id="subject" required placeholder=" " />
+              <label for="subject">Subject</label>
+            </div>
+            <div class="form-group">
+              <textarea id="message" rows="5" required placeholder=" "></textarea>
+              <label for="message">Your Message</label>
+            </div>
+            <button type="submit" class="submit-btn">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>            
           </form>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- External JS -->
+  <footer class=" centered-footer">
+      <p>&copy;All rights reserved. <br>Designed and Developed by Darshan M Allurkar</p>
+  </footer>
+
+  <!-- Success Popup -->
+  <div id="success-popup">Opening your email app...</div>
+
+  <!-- JS -->
   <script src="app.js"></script>
+  <!-- Back to Top Button -->
+<button id="backToTop" title="Go to top">⬆</button>
+
+<script>
+// Get the button
+const backToTop = document.getElementById("backToTop");
+
+// Show button when scrolling down
+window.addEventListener("scroll", () => {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    backToTop.style.display = "block";
+  } else {
+    backToTop.style.display = "none";
+  }
+});
+
+// When clicked, scroll to top smoothly
+backToTop.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+</script>
+
 </body>
 </html>

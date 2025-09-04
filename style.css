@@ -1271,3 +1271,27 @@ section {
   background: goldenrod;
   color: #111;
 }
+
+
+/* Scroll to top button */
+#backToTop {
+  position: fixed;
+  bottom: 50px;
+  right: 40px;
+  z-index: 1000;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: #dac8c81a; /* theme color */
+  color: white;
+  cursor: pointer;
+  padding: 17px 20px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(214, 179, 4, 0.632);
+  display: none; /* hidden by default */
+  transition: all 0.3s ease-in-out;
+}
+
+#backToTop:hover {
+  background-color: #41414128;
+}
